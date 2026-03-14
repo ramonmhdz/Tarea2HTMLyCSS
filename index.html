@@ -31,7 +31,7 @@
     -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio de [Tu Nombre] - Ingeniero en Tecnologías de la Información">
-    <title>Tu Nombre | Portfolio</title>
+    <title>Ramón Medina Hernández | Portfolio</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,7 +49,7 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#home" class="nav__logo">
-                <span class="logo__bracket">&lt;</span>TuNombre<span class="logo__bracket">/&gt;</span>
+                <span class="logo__bracket">&lt;</span>Ramón Medina<span class="logo__bracket">/&gt;</span>
             </a>
             
             <!-- Checkbox para menú móvil (CSS only) -->
@@ -100,24 +100,24 @@
             <div class="hero__container container">
                 <div class="hero__content">
                     <span class="hero__greeting">¡Hola! 👋 Soy</span>
-                    <h1 class="hero__title">Tu Nombre Completo</h1>
+                    <h1 class="hero__title">Ramón Medina Hernández</h1>
                     <h2 class="hero__subtitle">
-                        <span class="highlight">Ingeniero de Software</span> en Crecimiento
+                        <span class="highlight">Análista de Datos</span> en Crecimiento
                     </h2>
                     <p class="hero__description">
-                        Recién egresado de Tecnologías de la Información apasionado por crear 
-                        soluciones digitales innovadoras. Combino creatividad técnica con un 
-                        enfoque orientado a resultados para transformar ideas en código funcional.
+                        Estudiante de Matemáticas Aplicadas y Computación, interesado en el análisis
+                        de datos para la toma de decisiones. Conocimientos robustos en Estadistica, Probabilidad
+                        y Modelos Estadisticos. 
                     </p>
                     <!-- ERROR 1: El botón "Ver mis proyectos" no tiene estilos de botón primario
                          PISTA: Revisa las clases del botón, falta una clase -->
                     <div class="hero__buttons">
-                        <a href="#projects" class="btn">
+                        <a href="#projects" class="btn btn--primary">
                             <i class="fas fa-rocket"></i> Ver mis proyectos
                         </a>
                         <!-- ERROR 2: El enlace no lleva a la sección correcta
                              PISTA: El ID de la sección de contacto es "contact", verifica el href -->
-                        <a href="#contacto" class="btn btn--outline">
+                        <a href="#contact" class="btn btn--outline">
                             <i class="fas fa-envelope"></i> Contáctame
                         </a>
                     </div>
@@ -126,7 +126,7 @@
                 <div class="hero__image">
                     <div class="hero__blob">
                         <div class="hero__avatar">
-                            <i class="fas fa-user-astronaut"></i>
+                            <i class="fas fa-chart-line"></i>
                         </div>
                     </div>
                     <div class="hero__decoration hero__decoration--1"></div>
@@ -160,36 +160,35 @@
                          PISTA: Revisa el contenido del div card__icon, falta el elemento del icono -->
                     <article class="interest__card">
                         <div class="card__icon">
-                            
+                            <i class="fas fa-square-poll-vertical"></i>
                         </div>
-                        <h3 class="card__title">Desarrollo Web</h3>
+                        <h3 class="card__title">Análisis de Datos</h3>
                         <p class="card__description">
-                            Creación de aplicaciones web modernas con tecnologías como 
-                            HTML5, CSS3, JavaScript y frameworks actuales.
+                            Recopilación, limpieza, procesamiento y visualización de conjuntos
+                            de datos para convertirlos en información valiosa que ayuden a una mejor toma de decisiones.
                         </p>
                         <div class="card__tags">
-                            <span class="tag">HTML/CSS</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">React</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">R</span>
+                            <span class="tag">Power BI</span>
                         </div>
                     </article>
                     
                     <!-- Card 2 -->
                     <!-- ERROR 4: Esta card no tiene los estilos de tarjeta aplicados
                          PISTA: El nombre de la clase está mal escrito, revisa la ortografía de "interest" -->
-                    <article class="interst__card">
+                    <article class="interest__card">
                         <div class="card__icon">
-                            <i class="fas fa-shield-halved"></i>
+                            <i class="fa-solid fa-arrows-to-dot"></i>
                         </div>
-                        <h3 class="card__title">Ciberseguridad</h3>
+                        <h3 class="card__title">Inteligencia de Negocios</h3>
                         <p class="card__description">
-                            Protección de sistemas y datos, análisis de vulnerabilidades 
-                            y mejores prácticas de seguridad informática.
+                            Creación de reportes y dashboards estrategicos con información valiosa
+                            para la toma de decisiones de empresas.
                         </p>
                         <div class="card__tags">
-                            <span class="tag">Seguridad Web</span>
-                            <span class="tag">Pentesting</span>
-                            <span class="tag">Redes</span>
+                            <span class="tag">Power BI</span>
+                            <span class="tag">Tableu</span>
                         </div>
                     </article>
                     
@@ -206,7 +205,7 @@
                         <div class="card__tags">
                             <span class="tag">Python</span>
                             <span class="tag">ML</span>
-                            <span class="tag">Data Science</span>
+                            <span class="tag">Ciencia de Datos</span>
                         </div>
                     </article>
                     
@@ -230,34 +229,37 @@
                     <!-- Card 5 -->
                     <article class="interest__card">
                         <div class="card__icon">
-                            <i class="fas fa-mobile-screen-button"></i>
+                            <i class="fa-solid fa-diagram-project"></i>
                         </div>
-                        <h3 class="card__title">Desarrollo Móvil</h3>
+                        <h3 class="card__title">Modelos de Series Temporales</h3>
                         <p class="card__description">
-                            Creación de aplicaciones móviles nativas y multiplataforma 
-                            para Android e iOS.
+                            Métodos estadisticos y de aprendizaje automático
+                            que analizan secuencias de datos ordenados cronologicamente 
+                            para predecir futuros comportamientos basados en tendencia, 
+                            estacionalidad y componentes irregulares.
                         </p>
                         <div class="card__tags">
-                            <span class="tag">Flutter</span>
-                            <span class="tag">React Native</span>
-                            <span class="tag">Kotlin</span>
+                            <span class="tag">Modelo MA</span>
+                            <span class="tag">Modelo AR</span>
+                            <span class="tag">Modelo ARMA</span>
                         </div>
                     </article>
                     
                     <!-- Card 6 -->
                     <article class="interest__card">
                         <div class="card__icon">
-                            <i class="fas fa-cloud"></i>
+                            <i class="fas fa-infinity"></i>
                         </div>
-                        <h3 class="card__title">Cloud Computing</h3>
+                        <h3 class="card__title">Redacción Científica y Técnica</h3>
                         <p class="card__description">
-                            Servicios en la nube, arquitecturas escalables y 
-                            despliegue de aplicaciones.
+                            Elaboración de documentos académicos, reportes analíticos complejos 
+                            y presentaciones estructuradas con alta calidad tipográfica para comunicar 
+                            resultados matemáticos.
                         </p>
                         <div class="card__tags">
-                            <span class="tag">AWS</span>
-                            <span class="tag">Azure</span>
-                            <span class="tag">Docker</span>
+                            <span class="tag">LaTeX</span>
+                            <span class="tag">Investigación</span>
+                            <span class="tag">Reportes</span>
                         </div>
                     </article>
                 </div>
@@ -268,14 +270,14 @@
                         <i class="fas fa-graduation-cap"></i> Materias Relevantes
                     </h3>
                     <div class="subjects__list">
-                        <span class="subject">Programación Orientada a Objetos</span>
+                        <span class="subject">Estadistica</span>
                         <span class="subject">Estructuras de Datos</span>
-                        <span class="subject">Algoritmos</span>
-                        <span class="subject">Redes de Computadoras</span>
-                        <span class="subject">Ingeniería de Software</span>
-                        <span class="subject">Bases de Datos</span>
-                        <span class="subject">Sistemas Operativos</span>
-                        <span class="subject">Desarrollo Web</span>
+                        <span class="subject">Probabilidad</span>
+                        <span class="subject">Algebra Lineal</span>
+                        <span class="subject">Métodos Númericos</span>
+                        <span class="subject">optimización</span>
+                        <span class="subject">Procesos Estocasticos</span>
+                        <span class="subject">Sistemas Inteligentes</span>
                     </div>
                 </div>
             </div>
@@ -295,10 +297,10 @@
                         </p>
                         
                         <div class="cv__buttons">
-                            <a href="https://www.overleaf.com/gallery/tagged/cv" class="btn btn--primary btn--large">
+                            <a href="./docs/CV_Medina_Ramón.pdf" download="CV_Medina_Ramón" class="btn btn--primary btn--large">
                                 <i class="fas fa-download"></i> Descargar CV
                             </a>
-                            <a href="#" class="btn btn--secondary btn--large">
+                            <a href="https://ramonmhdz.github.io/Lab05RamonMedinaHern-ndez/" class="btn btn--secondary btn--large">
                                 <i class="fas fa-eye"></i> Ver CV Digital
                             </a>
                         </div>
@@ -307,35 +309,35 @@
                     <div class="cv__social">
                         <h3 class="cv__social-title">Conectemos</h3>
                         <div class="cv__social-links">
-                            <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" class="social__card">
+                            <a href="https://www.linkedin.com/in/ram%C3%B3n-medina-3427683b0/" target="_blank" rel="noopener noreferrer" class="social__card">
                                 <div class="social__icon social__icon--linkedin">
                                     <i class="fab fa-linkedin-in"></i>
                                 </div>
                                 <div class="social__info">
                                     <span class="social__name">LinkedIn</span>
-                                    <span class="social__user">@tu-perfil</span>
+                                    <span class="social__user">@Ramón Medina</span>
                                 </div>
                                 <i class="fas fa-arrow-right social__arrow"></i>
                             </a>
                             
-                            <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" class="social__card">
+                            <a href="https://github.com/ramonmhdz" target="_blank" rel="noopener noreferrer" class="social__card">
                                 <div class="social__icon social__icon--github">
                                     <i class="fab fa-github"></i>
                                 </div>
                                 <div class="social__info">
                                     <span class="social__name">GitHub</span>
-                                    <span class="social__user">@tu-usuario</span>
+                                    <span class="social__user">@ramonmhdz</span>
                                 </div>
                                 <i class="fas fa-arrow-right social__arrow"></i>
                             </a>
                             
-                            <a href="mailto:tu@email.com" class="social__card">
+                            <a href="mailto:ramonmhdz04@gmail.com" class="social__card">
                                 <div class="social__icon social__icon--email">
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 <div class="social__info">
                                     <span class="social__name">Email</span>
-                                    <span class="social__user">tu@email.com</span>
+                                    <span class="social__user">ramonmhdz04@gmail.com</span>
                                 </div>
                                 <i class="fas fa-arrow-right social__arrow"></i>
                             </a>
@@ -349,7 +351,7 @@
         <!-- ERROR 5: Esta sección no tiene el contenido centrado ni con el ancho máximo
              PISTA: Falta una clase importante en el div que envuelve el contenido -->
         <section class="projects section" id="projects">
-            <div>
+            <div class="container">
                 <div class="section__header">
                     <span class="section__subtitle">Mi trabajo</span>
                     <h2 class="section__title">Proyectos Destacados</h2>
@@ -363,27 +365,27 @@
                     <article class="project__card">
                         <div class="project__image">
                             <div class="project__placeholder">
-                                <i class="fas fa-laptop-code"></i>
+                                <i class="fa-solid fa-people-group"></i>
                             </div>
                             <div class="project__overlay">
-                                <a href="#" target="_blank" rel="noopener noreferrer" class="project__link">
+                                <a href="./docs/El apéndice de la Geometría Euclidiana el quinto postulado.pdf" download="El apéndice de la Geometría Euclidiana el quinto postulado" target="_blank" rel="noopener noreferrer" class="project__link">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
-                                <a href="https://github.com/tu-usuario/proyecto-1" target="_blank" rel="noopener noreferrer" class="project__link">
+                                <!--<a href="https://github.com/tu-usuario/proyecto-1" target="_blank" rel="noopener noreferrer" class="project__link">
                                     <i class="fab fa-github"></i>
-                                </a>
+                                </a>-->
                             </div>
                         </div>
                         <div class="project__content">
-                            <h3 class="project__title">E-Commerce Platform</h3>
+                            <h3 class="project__title">Ponente en el 58 Congreso Nacional de Matemáticas</h3>
                             <p class="project__description">
-                                Plataforma de comercio electrónico con carrito de compras, 
-                                autenticación de usuarios y pasarela de pagos integrada.
+                                Expuse mi ponencia titulada  "El apéndice de la Geometría Euclidiana: el quinto postulado",
+                                frente a un grupo de personas.
                             </p>
                             <div class="project__tech">
-                                <span class="tech">React</span>
-                                <span class="tech">Node.js</span>
-                                <span class="tech">MongoDB</span>
+                                <span class="tech">LaTeX</span>
+                                <span class="tech">Geometría Euclidiana</span>
+                                <span class="tech">Geometría Hiperbólica</span>
                             </div>
                         </div>
                     </article>
@@ -391,32 +393,32 @@
                     <!-- Project 2 -->
                     <!-- ERROR 6: Esta tarjeta de proyecto no tiene los estilos de card
                          PISTA: Falta la clase que identifica a este elemento como tarjeta de proyecto -->
-                    <article class="project">
+                    <article class="project__card">
                         <div class="project__image">
                             <div class="project__placeholder">
-                                <i class="fas fa-chart-line"></i>
+                                <i class="fa-solid fa-magnifying-glass-chart"></i>
                             </div>
                             <div class="project__overlay">
-                                <a href="#" target="_blank" rel="noopener noreferrer" class="project__link">
+                                <a href="https://colab.research.google.com/drive/1INphyWWAcsVmq8q1FM_eFB9vFYKVeeTP?usp=sharing" target="_blank" rel="noopener noreferrer" class="project__link">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
-                                <a href="https://github.com/tu-usuario/proyecto-2" target="_blank" rel="noopener noreferrer" class="project__link">
+                                <a href="https://github.com/ramonmhdz/Estudio.-Estadistica.git" target="_blank" rel="noopener noreferrer" class="project__link">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="project__content">
-                            <h3 class="project__title">Dashboard Analytics</h3>
+                            <h3 class="project__title">Análisis de Datos</h3>
                             <p class="project__description">
-                                Panel de control interactivo para visualización de datos 
-                                con gráficos dinámicos y reportes automatizados.
+                                Se realizó un estudio acerca de la Relación entre el uso del 
+                                telefono y el tiempo de estudio en estudiantes de MAC, usando elementos básicos
+                                de estadistica.
                             </p>
                             <div class="project__tech">
                                 <!-- ERROR 7: Estos tags de tecnología no tienen el estilo correcto
                                      PISTA: Revisa la clase de los spans, debería ser "tech" -->
-                                <span class="tag">Python</span>
-                                <span class="tag">Django</span>
-                                <span class="tag">Chart.js</span>
+                                <span class="tech">Python</span>
+                                <span class="tech">Estadistica</span>
                             </div>
                         </div>
                     </article>
@@ -427,25 +429,25 @@
                             <div class="project__placeholder">
                                 <i class="fas fa-robot"></i>
                             </div>
-                            <div class="project__overlay">
+                            <!--<div class="project__overlay">
                                 <a href="#" target="_blank" rel="noopener noreferrer" class="project__link">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                                 <a href="https://github.com/tu-usuario/proyecto-3" target="_blank" rel="noopener noreferrer" class="project__link">
                                     <i class="fab fa-github"></i>
                                 </a>
-                            </div>
+                            </div>-->
                         </div>
                         <div class="project__content">
-                            <h3 class="project__title">AI Chatbot Assistant</h3>
+                            <h3 class="project__title">Economía, Política y otros juegos.</h3>
                             <p class="project__description">
-                                Asistente virtual inteligente con procesamiento de lenguaje 
-                                natural y respuestas contextuales.
+                                Organización y diseño curricular del taller "Economía, Política y otros juegos" 
+                                basado en modelos de Teoría de Juegos.
                             </p>
                             <div class="project__tech">
-                                <span class="tech">Python</span>
-                                <span class="tech">TensorFlow</span>
-                                <span class="tech">Flask</span>
+                                <span class="tech">LaTeX</span>
+                                <span class="tech">Teoría de Juegos</span>
+                                <span class="tech">Teoría de Gráficas</span>
                             </div>
                         </div>
                     </article>
@@ -478,7 +480,7 @@
                                 </div>
                                 <div class="contact__text">
                                     <span class="contact__label">Email</span>
-                                    <a href="mailto:tu@email.com" class="contact__value">tu@email.com</a>
+                                    <a href="mailto:tu@email.com" class="contact__value">ramonmhdz04@gmail.com</a>
                                 </div>
                             </div>
                             
@@ -486,11 +488,11 @@
                                  PISTA: La clase del icono está incompleta, revisa el nombre del icono de Font Awesome -->
                             <div class="contact__item">
                                 <div class="contact__icon">
-                                    <i class="fas fa-map"></i>
+                                    <i class="fas fa-map-marker-alt"></i>
                                 </div>
                                 <div class="contact__text">
                                     <span class="contact__label">Ubicación</span>
-                                    <span class="contact__value">Ciudad, País</span>
+                                    <span class="contact__value">México, México</span>
                                 </div>
                             </div>
                             
@@ -502,7 +504,7 @@
                                 </div>
                                 <div class="contact__text">
                                     <span class="contact__label">Disponibilidad</span>
-                                    <span class="contact__value">Disponible para trabajar</span>
+                                    <span class="contact__value contact__value--available">Disponible para trabajar</span>
                                 </div>
                             </div>
                         </div>
@@ -514,7 +516,7 @@
                             <p class="contact__card-text">
                                 Envíame un mensaje y te responderé lo antes posible.
                             </p>
-                            <a href="mailto:tu@email.com" class="btn btn--primary btn--large btn--full">
+                            <a href="mailto:ramonmhdz04@gmail.com" class="btn btn--primary btn--large btn--full">
                                 <i class="fas fa-paper-plane"></i> Enviar mensaje
                             </a>
                         </div>
@@ -530,7 +532,7 @@
             <div class="footer__content">
                 <div class="footer__brand">
                     <a href="#" class="footer__logo">
-                        <span class="logo__bracket">&lt;</span>TuNombre<span class="logo__bracket">/&gt;</span>
+                        <span class="logo__bracket">&lt;</span>Ramón Medina Hernández<span class="logo__bracket">/&gt;</span>
                     </a>
                     <p class="footer__text">
                         Gracias por visitar mi portfolio. ¡Espero que podamos trabajar juntos pronto!
@@ -540,13 +542,13 @@
                 <!-- ERROR 10: Uno de los íconos de redes sociales no tiene la clase correcta para estilos
                      PISTA: Revisa que todos los enlaces tengan la clase footer__social-link -->
                 <div class="footer__social">
-                    <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/ram%C3%B3n-medina-3427683b0/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <a href="https://github.com/ramonmhdz" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="mailto:tu@email.com" class="footer__social-link" aria-label="Email">
+                    <a href="mailto:ramonmhdz04@gmail.com" class="footer__social-link" aria-label="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
@@ -554,7 +556,7 @@
             
             <div class="footer__bottom">
                 <p class="footer__copyright">
-                    &copy; 2026 Tu Nombre. Todos los derechos reservados.
+                    &copy; 2026 Ramón Medina. Todos los derechos reservados.
                 </p>
                 <p class="footer__made">
                     Hecho con <i class="fas fa-heart"></i> y mucho <i class="fas fa-coffee"></i>
